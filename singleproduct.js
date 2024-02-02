@@ -6,8 +6,7 @@ function showProduct (product) {
   console.log(product)
   document.querySelector('.productTitle').textContent =
     product.productdisplayname
-  document.querySelector('.productInfo').textContent = product.description
-  document.querySelector('.productId').textContent = product.id
+  document.querySelector('.productInfo').innerHTML = product.description
   document.querySelector('.price span').textContent = product.price
   document.querySelector('.img').src =
     'http://assets.myntassets.com/v1/assets/banners/2015/6/26/1435317851398-23197-3chxv6.jpg'
