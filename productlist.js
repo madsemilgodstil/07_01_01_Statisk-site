@@ -16,6 +16,7 @@ function showProductlist (showProduct) {
     'img'
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${showProduct.id}.webp`
   myClone.querySelector('.price span').textContent = showProduct.price
+  myClone.querySelector('.discount span').textContent = showProduct.discount
 
   const parentElement = document.querySelector('main')
   parentElement.appendChild(myClone)
