@@ -13,7 +13,6 @@ function showProductlist (showProduct) {
   myClone.querySelector('h2').textContent = showProduct.productdisplayname
   myClone.querySelector('.productId').textContent = showProduct.id
 
-  // Set the product ID and image source dynamically
   myClone.querySelector('a').href = `produkt.html?ProductId=${showProduct.id}`
   myClone.querySelector(
     'img'
