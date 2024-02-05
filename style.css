@@ -79,3 +79,7 @@ main {
 .discount span {
   color: rgb(255, 0, 0);
 }
+
+.singleproduct img {
+  width: 30%;
+}
