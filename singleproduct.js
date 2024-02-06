@@ -8,7 +8,12 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
 
 function showSingleProduct (singleProduct) {
   document.querySelector('h2').textContent = singleProduct.productdisplayname
+  document.querySelector('h5').textContent = singleProduct.gender
   document.querySelector('.newProductId').textContent = singleProduct.id
+  document.querySelector('.brand').textContent = singleProduct.brandname
+  document.querySelector('.usagetype').textContent = singleProduct.usagetype
+  document.querySelector('.articletype').textContent = singleProduct.articletype
+  document.querySelector('.season').textContent = singleProduct.season
   document.querySelector('.price span').textContent = singleProduct.price
   document.querySelector(
     'img'
