@@ -14,8 +14,14 @@ function showSingleProduct (singleProduct) {
   document.querySelector('.usagetype').textContent = singleProduct.usagetype
   document.querySelector('.articletype').textContent = singleProduct.articletype
   document.querySelector('.season').textContent = singleProduct.season
+  document.querySelector('.discount span').textContent = singleProduct.discount
   document.querySelector('.price span').textContent = singleProduct.price
   document.querySelector(
     'img'
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${singleProduct.id}.webp`
+
+  if (!singleProduct.discount) {
+    //!product.discount means NOT product.discount
+    document.querySelector('.discount').remove()
+  }
 }

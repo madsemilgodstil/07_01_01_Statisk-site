@@ -57,22 +57,21 @@ a {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-img {
-  width: 100%;
-  border-radius: 30px;
-}
-
 nav {
   margin: 2%;
   display: flex;
   justify-content: space-around;
 }
 
-main {
-  margin: 5%;
+.productlistProduct {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+}
+
+.productlistProduct img {
+  width: 100%;
+  border-radius: 30px;
 }
 
 .discount {
@@ -83,7 +82,7 @@ main {
   color: rgb(255, 0, 0);
 }
 
-article .singleproduct {
+.singleproduct {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -93,7 +92,7 @@ article .singleproduct {
 .singleproduct img {
   grid-column: 1/2;
   grid-row: 1/7;
-  width: 100%;
+  width: 80%;
 }
 
 .singleproduct h2 {
