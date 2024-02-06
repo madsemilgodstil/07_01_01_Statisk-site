@@ -1,32 +1,30 @@
 * {
   box-sizing: border-box;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h3 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h5 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: ivory;
 }
 
@@ -36,12 +34,22 @@ h6 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+.buy {
+  background-color: rgba(126, 115, 102, 0.358);
+  color: ivory;
+  border: none;
+  padding: 2%;
+  cursor: pointer;
 }
 
 .price {
   color: ivory;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 body {
@@ -57,36 +65,52 @@ a {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+header {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: rgba(126, 115, 102, 0.358);
+  border-radius: 30px;
+  padding: 2%;
+}
+
 nav {
-  margin: 2%;
   display: flex;
   justify-content: space-around;
 }
 
 .productlistProduct {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+  text-align: center;
+  margin-top: 5%;
 }
 
 .productlistProduct img {
-  width: 100%;
+  width: 70%;
   border-radius: 30px;
 }
 
 .discount {
   color: antiquewhite;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .discount span {
-  color: rgb(255, 0, 0);
+  color: rgb(253, 223, 185);
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .singleproduct {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  text-align: center;
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
 
 .singleproduct img {
@@ -111,6 +135,24 @@ nav {
   grid-column: 2/3;
   grid-row: 1/2;
   margin-top: 20%;
+}
+
+.singleproduct .price {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 10%;
+}
+
+.singleproduct .productInfo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 0%;
+}
+
+.singleproduct .discount {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 30%;
 }
 
 footer {
