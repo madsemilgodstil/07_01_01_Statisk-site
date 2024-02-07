@@ -21,7 +21,6 @@ function showSingleProduct (singleProduct) {
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${singleProduct.id}.webp`
 
   if (!singleProduct.discount) {
-    //!product.discount means NOT product.discount
     document.querySelector('.discount').remove()
   }
 }

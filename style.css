@@ -170,3 +170,11 @@ footer p {
 .hrefCategory {
   color: black;
 }
+
+.soldout {
+  opacity: 0.5;
+}
+
+.soldout::before {
+  opacity: 1;
+}

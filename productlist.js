@@ -17,7 +17,6 @@ function showProductList (showProduct) {
   myClone.querySelector('h2').textContent = showProduct.productdisplayname
   myClone.querySelector('.productId').textContent = showProduct.id
   myClone.querySelector('.season').textContent = showProduct.season
-
   myClone.querySelector('a').href = `produkt.html?ProductId=${showProduct.id}`
   myClone.querySelector(
     'img'
@@ -28,6 +27,10 @@ function showProductList (showProduct) {
 
   if (!showProduct.discount) {
     myClone.querySelector('.discount').remove()
+  }
+
+  if (showProduct.soldout) {
+    myClone.querySelector('article').classList.add('.soldout')
   }
 
   const parentElement = document.querySelector('main')
