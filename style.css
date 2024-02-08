@@ -1,6 +1,16 @@
 * {
   box-sizing: border-box;
 }
+html {
+  :root {
+    --main-white: ivory;
+    --main-link: wheat;
+    --main-black: #000000;
+    --main-text-highligth: antiquewhite;
+    --main-bg: rgb(189, 175, 158);
+    --main-bg-highligt: rgba(126, 115, 102, 0.358);
+  }
+}
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -177,4 +187,47 @@ footer p {
 
 .soldout::before {
   opacity: 1;
+}
+
+/* _______________________Dropdown_________________________ */
+
+.dropbtn {
+  background-color: var(--main-bg-highligt);
+  color: var(--main-white);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-bg-highligt);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--main-text);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--main-text-highligth);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--main-bg);
 }
